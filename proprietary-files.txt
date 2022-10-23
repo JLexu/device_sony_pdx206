@@ -158,6 +158,10 @@ vendor/lib/libaudiokeymgr.so
 vendor/lib/libc++_shared.so
 vendor/lib/libsymphony-cpu.so
 vendor/lib/libops.so
+vendor/lib/soundfx/libozoprocessing.so
+vendor/lib64/soundfx/libozoprocessing.so
+vendor/lib/soundfx/libswgamedap.so
+vendor/lib64/soundfx/libswgamedap.so
 
 # Authsecret
 vendor/bin/hw/android.hardware.authsecret@1.0-service-qti
@@ -1230,38 +1234,34 @@ vendor/etc/init/vendor.semc.hardware.display@2.2-service.rc
 vendor/lib/libdpps.so
 vendor/lib64/libdpps.so
 
-# Dolby Sony
-system/lib/vendor.dolby.hardware.dms@2.0.so
+# Dolby
 system/lib64/vendor.dolby.hardware.dms@2.0.so
 vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service
-vendor/etc/dolby/dax-default.xml
 vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc
-vendor/etc/vintf/manifest/manifest_vendor.dolby.hardware.dms.xml
-vendor/etc/media_codecs_dolby_audio.xml
 vendor/lib/libdapparamstorage.so
 vendor/lib/libdeccfg.so
-vendor/lib/libstagefrightdolby.so
+vendor/lib/libqtigef.so
+vendor/lib/soundfx/libeffectproxy.so
+vendor/lib/soundfx/libhwdap.so
+vendor/lib/soundfx/libswdap.so
 vendor/lib/vendor.dolby.hardware.dms@2.0.so
 vendor/lib64/libdapparamstorage.so
 vendor/lib64/libdeccfg.so
 vendor/lib64/libdlbdsservice.so
-vendor/lib64/libstagefrightdolby.so
-vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so
+vendor/lib64/libqtigef.so
+vendor/lib64/soundfx/libeffectproxy.so
+vendor/lib64/soundfx/libhwdap.so
+vendor/lib64/soundfx/libswdap.so
 vendor/lib64/vendor.dolby.hardware.dms@2.0.so
+vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so
 
-# Dolby OnePlus Imports
-system_ext/etc/permissions/privapp-com.dolby.daxappui.xml|f84f364135dda6fa68beb4039fcdf16e
-system_ext/etc/permissions/privapp-com.dolby.daxservice.xml|40dcac1d168acb603776cfeef44cab25
-system_ext/etc/sysconfig/config-com.dolby.daxappui.xml|fce084b5ea52db53d25a7bbf64d8c7ce
-system_ext/etc/sysconfig/config-com.dolby.daxservice.xml|cd1424d569038a393fccadb457c930c2
-system_ext/etc/sysconfig/hiddenapi-com.dolby.daxservice.xml|3d8dfe8008f667cf2b3572983c08c3af
--system_ext/priv-app/DaxUI/DaxUI.apk|feae263be94cabae10ade62f50fb7051
--system_ext/priv-app/daxService/daxService.apk|2e2c5f6939d7545c7f59fa2b15deb727
+# Dolby (libswvqe) - from OnePlus8Oxygen_15.I.20_GLO_020_2008080048
+vendor/lib/soundfx/libswvqe.so|076a2d0d002b2ab044b9879ff6b82f79ada5caed
+vendor/lib64/soundfx/libswvqe.so|fa4082e95c001742746d29c6f76442086e2c9880
 
 # Dolby MediaCodecs
 vendor/lib/libstagefright_soft_ac4dec.so
 vendor/lib/libstagefright_soft_ddpdec.so
-vendor/lib/libstagefright_soft_qtiflacdec.so
 vendor/lib64/libstagefright_soft_ac4dec.so
 vendor/lib64/libstagefright_soft_ddpdec.so
 
@@ -2467,35 +2467,4 @@ vendor/etc/change.cfg
 # Touchscreen firmware
 vendor/firmware/touch_module_id_0x83.img
 
-# Dolby
-# system/priv-app/daxService/daxService.apk|52f4deff3fb440c33b8d41fbbc7c9f36ba74b0a4
-# system/priv-app/DaxUI/DaxUI.apk|6e9c532492d4371d0ddc203abdf858a5c7991091
-system/lib64/vendor.dolby.hardware.dms@2.0.so|0a1cb972160890b07baf3a3e624e9ec1273befed
-system_ext/etc/permissions/privapp-com.dolby.daxappui.xml|b783016728b17eadfcdad662ccaf546afbeab856
-system_ext/etc/permissions/privapp-com.dolby.daxservice.xml|e61ed4d4cbdf54dee613080d26e3dda75c3ac2f8
-system_ext/etc/sysconfig/config-com.dolby.daxappui.xml|43c610f41061f49959ce07b26c60427b8767e535
-system_ext/etc/sysconfig/config-com.dolby.daxservice.xml|7690774632fe32269657fc1a2a0c941c7cd83f3d
-system_ext/etc/sysconfig/hiddenapi-com.dolby.daxservice.xml|f647356bd3a4bb4174e873e4544c2921d51fd4d2
-system_ext/priv-app/daxService/daxService.apk|8e0061bc487a9023b8e4d76215a48915e1cecfa5
-# system_ext/priv-app/DaxUI/DaxUI.apk|9cb00a47428375809ac05bf71f4a8e9bf8e557a5
-vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service|71fa551fc9690007113e9962129ca965a426dd35
-vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc|8680d91c743c6cbb22c97594ebee0f11847ca3ad
-vendor/lib/libdapparamstorage.so|98e3c70e8081d25afb75da1fe7718bce9217418b
-vendor/lib/libdeccfg.so|f5b4f08095a0abd995ad74306bff1f5079c93452
-vendor/lib/vendor.dolby.hardware.dms@2.0.so|7e7a1628c0e2d76893fd35163978b4b133a6149e
-# vendor/lib/soundfx/libeffectproxy.so|18b81b931c2ec59d848a97d12d903957bf560592
-vendor/lib/soundfx/libhwdap.so|3a51c9e37b55c30e563e12f2fe876d8b554acd07
-vendor/lib/soundfx/libswdap.so|880a9e079c18fcc7357c40607e46cf689db45496
-vendor/lib64/libdapparamstorage.so|634e9bc91e17d05b4010dfa7c73b539239137e4a
-vendor/lib64/libdeccfg.so|08119718bc0031323b1fe5ad7d34f395d9c8d0fa
-vendor/lib64/libdlbdsservice.so|38e58c6a61a84d18467ccad89bbed88f7b860017
-vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so|65843ca63be43bbabf2672d5053e0aa017a8b0da
-vendor/lib64/vendor.dolby.hardware.dms@2.0.so|e43278e2100366bd2050edb6660cb861a5e63769
-# vendor/lib64/soundfx/libeffectproxy.so|8f1aadf409ab856e548f8e1de3b70afe6b87d407
-vendor/lib64/soundfx/libhwdap.so|05614e40df404c9a80734ca2cd033ebd67c39804
-vendor/lib64/soundfx/libswdap.so|c6746d6258ef28043383a4241580bf3ac21934d6
-vendor/etc/dolby/dax-default.xml|d75a5fcf867db9e219cf2035f27cc879699d326a
-
-vendor/lib64/soundfx/libswvqe.so|fa4082e95c001742746d29c6f76442086e2c9880
-vendor/lib/soundfx/libswvqe.so|076a2d0d002b2ab044b9879ff6b82f79ada5caed
 
