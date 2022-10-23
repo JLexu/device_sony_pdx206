@@ -243,7 +243,8 @@ PRODUCT_PACKAGES += \
     init.nfc.rc \
     init.sony-device-common.rc \
     init.sony-platform.rc \
-    init.sony.rc
+    init.sony.rc \
+    init.qcom.power.rc
 
 # Component overrides
 PRODUCT_COPY_FILES += \
