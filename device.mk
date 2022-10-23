@@ -261,8 +261,9 @@ PRODUCT_PACKAGES += \
     disable_configstore
 
 # Device-specific settings
-PRODUCT_PACKAGES += \
-    SonySwitcher
+#PRODUCT_PACKAGES += \
+#    SonySwitcher \
+#    SonyParts
 
 # Display
 PRODUCT_PACKAGES += \
