@@ -125,6 +125,8 @@ PRODUCT_PACKAGES += \
     tinyplay \
     tinymix \
     audio_amplifier.kona
+    libaptX_encoder \
+    libaptXHD_encoder
 
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
