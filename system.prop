@@ -37,6 +37,10 @@ persist.vendor.color.matrix=2
 ro.config.avoid_gfx_accel=false
 ro.config.low_ram=false
 
+#Enable Blur Props
+ro.sf.blurs_are_expensive=1 \
+ro.surface_flinger.supports_background_blur=1
+
 # CNE
 persist.vendor.cne.feature=1
 
