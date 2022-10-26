@@ -162,6 +162,24 @@ vendor/lib/soundfx/libozoprocessing.so
 vendor/lib64/soundfx/libozoprocessing.so
 vendor/lib/soundfx/libswgamedap.so
 vendor/lib64/soundfx/libswgamedap.so
+vendor/lib/soundfx/libbundlewrapper.so
+vendor/lib64/soundfx/libbundlewrapper.so
+vendor/lib/soundfx/libvisualizer.so
+vendor/lib64/soundfx/libvisualizer.so
+vendor/lib/soundfx/libqcomvisualizer.so
+vendor/lib64/soundfx/libqcomvisualizer.so
+vendor/lib/soundfx/libdownmix.so
+vendor/lib64/soundfx/libdownmix.so
+vendor/lib/soundfx/libldnhncr.so
+vendor/lib64/soundfx/libldnhncr.so
+vendor/lib/soundfx/libdynproc.so
+vendor/lib64/soundfx/libdynproc.so
+vendor/lib/soundfx/libqcompostprocbundle.so
+vendor/lib64/soundfx/libqcompostprocbundle.so
+vendor/lib/soundfx/libqcomvoiceprocessing.so
+vendor/lib64/soundfx/libqcomvoiceprocessing.so
+vendor/lib/soundfx/libvolumelistener.so
+vendor/lib64/soundfx/libvolumelistener.so
 
 # Authsecret
 vendor/bin/hw/android.hardware.authsecret@1.0-service-qti
@@ -1254,6 +1272,8 @@ vendor/lib64/soundfx/libhwdap.so
 vendor/lib64/soundfx/libswdap.so
 vendor/lib64/vendor.dolby.hardware.dms@2.0.so
 vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so
+vendor/lib/libstagefrightdolby.so
+vendor/lib64/libstagefrightdolby.so
 
 # Dolby (libswvqe) - from OnePlus8Oxygen_15.I.20_GLO_020_2008080048
 vendor/lib/soundfx/libswvqe.so|076a2d0d002b2ab044b9879ff6b82f79ada5caed
